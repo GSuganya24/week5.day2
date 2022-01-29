@@ -51,9 +51,7 @@ public void assignIncident(String name, String group, String notes) throws Inter
 		search2.sendKeys(inciNum1);
 		search2.sendKeys(Keys.ENTER);
 		Thread.sleep(1000);
-		String inciNum2 = driver.findElement(By.xpath("//table[@id='incident_table']/tbody/tr/td[3]/a")).getText();
 		String assignmentGrp = driver.findElement(By.xpath("//table[@id='incident_table']/tbody//td[10]/a")).getText();
-		if(inciNum1==inciNum2) {
 			if(assignmentGrp.equals("Software")) {
 				System.out.println("The incident is assigned to "+assignmentGrp+" Group");
 			}else {
@@ -61,7 +59,6 @@ public void assignIncident(String name, String group, String notes) throws Inter
 			}
 		}
 		
-	}
 
 
 }

@@ -8,6 +8,7 @@
     <classes>
       <class name="week5.day2.CreateIncident"/>
       <class name="week5.day2.AssignIncident"/>
+      <class name="week5.day2.UpdateIncident"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
